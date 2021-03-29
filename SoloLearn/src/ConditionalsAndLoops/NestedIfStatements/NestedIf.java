@@ -1,6 +1,6 @@
-package ConditionalsAndLoops.Nested_ifStatements;
+package ConditionalsAndLoops.NestedIfStatements;
 
-public class Nested_if {
+public class NestedIf {
     public static void main(String[] args) {
         int x = 37;
         if (x > 22) {
