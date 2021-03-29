@@ -1,4 +1,4 @@
-package BasicConcepts.Project1;
+package BasicConcepts.ProjectModule1;
 
 import java.util.Scanner;
 
