@@ -1,4 +1,4 @@
-package ConditionalsAndLoops.SwitchStatement;
+package ConditionalsAndLoops.TheSwitchStatement;
 
 public class SwitchStatement {
     public static void main(String[] args) {
