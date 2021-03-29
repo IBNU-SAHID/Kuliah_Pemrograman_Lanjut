@@ -1,8 +1,8 @@
-package BasicConcepts.ProjectModule1;
+package BasicConcepts.TimeConverter;
 
 import java.util.Scanner;
 
-public class TimeConverter {
+public class program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int days = scanner.nextInt();
