@@ -10,6 +10,7 @@ public class Program {
         double per = 0.10;
         //your code goes here
         do{
+
             bayar = amount * 10/100;
             total = amount - bayar;
             amount =total;
