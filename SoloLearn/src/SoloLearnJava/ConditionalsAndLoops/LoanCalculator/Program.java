@@ -7,7 +7,6 @@ public class Program {
         Scanner scanner = new Scanner(System.in);
         int amount = scanner.nextInt();
         int total = 0, bayar = 0, i=0;
-        double per = 0.10;
         //your code goes here
         do{
             bayar = amount * 10/100;
