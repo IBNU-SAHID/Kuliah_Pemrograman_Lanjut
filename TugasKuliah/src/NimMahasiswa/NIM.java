@@ -3,6 +3,10 @@ package NimMahasiswa;
 public class NIM {
     private String nim;
 
+    public String getNim() {
+
+        return nim;
+    }
 
     public void setNim(String nim) {
 
@@ -20,11 +24,11 @@ public class NIM {
         };
     }
 
-    //Angkatan
-    public String Angkatan(){
-        char kodeAngkatan1 = nim.charAt(1);
-        char kodeAngkatan2 = nim.charAt(2);
-        return "" + kodeAngkatan1 + kodeAngkatan2;
+    //tahun masuk
+    public String tahunMasuk(){
+        char kodeTahun1 = nim.charAt(1);
+        char kodeTahun2 = nim.charAt(2);
+        return "" + kodeTahun1 + kodeTahun2;
 
     }
 
