@@ -3,10 +3,6 @@ package NimMahasiswa;
 public class NIM {
     private String nim;
 
-    public String getNim() {
-
-        return nim;
-    }
 
     public void setNim(String nim) {
 
@@ -16,12 +12,15 @@ public class NIM {
     //Jenjang pendidikan
     public String jenjangPendidikan(){
         char kodeJenjang = nim.charAt(0);
-        return switch (kodeJenjang) {
-            case '1' -> "S1(Sarjana)";
-            case '2' -> "S2(Megister)";
-            case '3' -> "S3(Doktoral)";
-            default -> "Tidak Diketahui";
-        };
+        if(kodeJenjang == '1'){
+            return "S1(Sarjana)";
+        }else if(kodeJenjang == '2'){
+            return "S2(Megister)";
+        }else if(kodeJenjang == '3'){
+            return  "S3(Doktoral)";
+        }else {
+            return "Tidak Diketahui";
+        }
     }
 
     //tahun masuk
@@ -35,32 +34,46 @@ public class NIM {
     //Fakultas
     public String Fakultas(){
         char kodeFakultas = nim.charAt(3);
-        return switch (kodeFakultas){
-            case '1' -> "TARBIYAH DAN KEGURUAN";
-            case '2' -> "SYARI’AH DAN HUKUM";
-            case '3' -> "USHULUDDIN";
-            case '4' -> "DAKWAH & KOMUNIKASI";
-            case '5' -> "SAINS DAN TEKNOLOGI";
-            case '6' -> "PSIKOLOGI";
-            case '7' -> "EKONOMI DAN ILMU SOSIAL";
-            case '8' -> "PERTANIAN DAN PETERNAKAN";
-            default -> "Tidak Diketahui";
+        if(kodeFakultas == '1'){
+            return "TARBIYAH DAN KEGURUAN";
+        }else if(kodeFakultas == '2'){
+            return "SYARI’AH DAN HUKUM";
+        }else if(kodeFakultas == '3'){
+            return "USHULUDDIN";
+        }else if(kodeFakultas == '4'){
+            return "DAKWAH & KOMUNIKASI";
+        }else if(kodeFakultas == '5'){
+            return "SAINS DAN TEKNOLOGI";
+        }else if(kodeFakultas == '6'){
+            return "PSIKOLOGI";
+        }else if(kodeFakultas == '7'){
+            return "EKONOMI DAN ILMU SOSIAL";
+        }else if(kodeFakultas == '8'){
+            return "PERTANIAN DAN PETERNAKAN";
+        }else{
+            return "Tidak Diketahui";
+        }
 
-        };
     }
     //Prodi
     public String Prodi(){
         char kodeProdi1 = nim.charAt(4);
         char kodeProdi2 = nim.charAt(5);
         String kodeProdi = "" + kodeProdi1 +kodeProdi2;
-        return switch (kodeProdi) {
-            case "01" -> "Teknik Informatika";
-            case "02" -> "Teknik Industri";
-            case "03" -> "Sistem Informasi";
-            case "04" -> "Matematika";
-            case "05" -> "Teknik Elektro";
-            default -> "Tidak Diketahui";
-        };
+        if (kodeProdi.equals("01") ){
+            return "Teknik Informatika";
+        }else if (kodeProdi.equals("02") ){
+            return "Teknik Industri";
+        }else if (kodeProdi.equals("03") ){
+            return "Sistem Informasi";
+        }else if (kodeProdi.equals("04") ){
+            return "Matematika";
+        }else if (kodeProdi.equals("05") ){
+            return "Teknik Elektro";
+        }else{
+            return "Tidak Diketahui";
+        }
+
     }
 
     //Jenis Kelamin
