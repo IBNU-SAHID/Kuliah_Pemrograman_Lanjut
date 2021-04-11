@@ -11,7 +11,9 @@ public class NIM {
 
     //Jenjang pendidikan
     public String jenjangPendidikan(){
+
         char kodeJenjang = nim.charAt(0);
+
         if(kodeJenjang == '1'){
             return "S1(Sarjana)";
         }else if(kodeJenjang == '2'){
@@ -21,19 +23,24 @@ public class NIM {
         }else {
             return "Tidak Diketahui";
         }
+
     }
 
     //tahun masuk
     public String tahunMasuk(){
+
         char kodeTahun1 = nim.charAt(1);
         char kodeTahun2 = nim.charAt(2);
+
         return "" + kodeTahun1 + kodeTahun2;
 
     }
 
     //Fakultas
     public String Fakultas(){
+
         char kodeFakultas = nim.charAt(3);
+
         if(kodeFakultas == '1'){
             return "TARBIYAH DAN KEGURUAN";
         }else if(kodeFakultas == '2'){
@@ -57,9 +64,12 @@ public class NIM {
     }
     //Prodi
     public String Prodi(){
+
         char kodeProdi1 = nim.charAt(4);
         char kodeProdi2 = nim.charAt(5);
+
         String kodeProdi = "" + kodeProdi1 +kodeProdi2;
+
         if (kodeProdi.equals("01") ){
             return "Teknik Informatika";
         }else if (kodeProdi.equals("02") ){
@@ -78,6 +88,7 @@ public class NIM {
 
     //Jenis Kelamin
     public String jenisKelamin(){
+
         char kodeJk = nim.charAt(6);
 
         if(kodeJk == '1'){
@@ -90,10 +101,12 @@ public class NIM {
 
     //Nomor Mahasiswa
     public String nomorMahasiswa(){
+
         char kodeNoMhs1= nim.charAt(7);
         char kodeNoMhs2 = nim.charAt(8);
         char kodeNoMhs3 = nim.charAt(9);
         char kodeNoMhs4 = nim.charAt(10);
+
         return "" + kodeNoMhs1 + kodeNoMhs2 + kodeNoMhs3 + kodeNoMhs4;
 
     }
