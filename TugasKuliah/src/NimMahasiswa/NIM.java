@@ -32,7 +32,7 @@ public class NIM {
         char kodeTahun1 = nim.charAt(1);
         char kodeTahun2 = nim.charAt(2);
 
-        return "" + kodeTahun1 + kodeTahun2;
+        return "20" + kodeTahun1 + kodeTahun2;
 
     }
 
