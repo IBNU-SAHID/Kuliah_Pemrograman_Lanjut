@@ -1,8 +1,8 @@
 package NimMahasiswa;
 
 public class NIM {
+    public  final String Universitas = "Universitas Islam Negeri Sultan Syarif Kasim Riau";
     private String nim;
-
 
     public void setNim(String nim) {
 
