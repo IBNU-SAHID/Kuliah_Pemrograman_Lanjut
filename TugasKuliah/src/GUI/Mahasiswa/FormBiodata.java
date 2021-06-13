@@ -45,7 +45,7 @@ public class FormBiodata {
                     );
 
                 }else{
-                    textData.setText("Nim yang anda masukan salah");
+                    textData.setText("Nim yang anda masukan salah!");
                 }
 
 

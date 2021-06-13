@@ -17,7 +17,7 @@
         </constraints>
         <properties>
           <font name="Verdana" size="16" style="1"/>
-          <text value="Biodata Mahasiswa"/>
+          <text value="       Biodata Mahasiswa"/>
         </properties>
       </component>
       <component id="47c74" class="javax.swing.JLabel">
