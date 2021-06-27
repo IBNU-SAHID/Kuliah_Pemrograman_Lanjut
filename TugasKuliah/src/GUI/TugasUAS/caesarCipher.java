@@ -51,7 +51,7 @@ public class caesarCipher {
     public String dekripsi(String ciphertext, int key){
         StringBuffer plainteks = new StringBuffer(); // membuat objek StringBuffer baru
         char karakter = ciphertext.charAt(0);//mengambil karakter pada ciphertext mulai dari index awalnya
-        int charPosition =   ALPHABET.indexOf(karakter); // menetapkan posisi karakter
+        int charPosition =   ALPHABET.indexOf(karakter); // menetapkan posisi karakter pada alphabet
 
 
         /*
