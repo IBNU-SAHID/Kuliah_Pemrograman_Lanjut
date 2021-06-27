@@ -38,7 +38,7 @@ public class caesarCipher {
         ciphertext.append(karakter);
       /*
        kondisi untuk rekursif , jika panjang plainteks lebih dari 1,
-       maka fungsi dekripsi akan di panggil kembali dengan merangkai cipherteks mulai dari index karakter pada plainteks berikutnya
+       maka fungsi dekripsi akan di panggil kembali dengan merangkai cipherteks
       */
         if (plainteks.length() > 1) {
             ciphertext.append(enkripsi(plainteks.substring(1), key));
@@ -91,7 +91,7 @@ public class caesarCipher {
 
          /*
             kondisi untuk rekursif, jika panjang cipherteks lebih besar dari 1,
-            maka fungsi dekripsi akan di panggil kembali dengan merangkai pesan mulai dari  karakter pada ciphertext berikutnya
+            maka fungsi dekripsi akan di panggil kembali dengan merangkai plaintext/pesan
              */
 
         if (ciphertext.length() > 1) {
