@@ -7,10 +7,11 @@ public class caesarCipher {
 
     //Method enkripsi
     public  String enkripsi(String plainteks, int key) {
-        plainteks = plainteks.toLowerCase();
+        StringBuffer ciphertext = new StringBuffer();   //Membuat objek stringbuffer baru
+        plainteks = plainteks.toLowerCase();            // setting plaintext/pesan menjadi huruf kecil
         char karakter = plainteks.charAt(0);              // mengambil karakter pada cipherteks
         int charPosition =   ALPHABET.indexOf(karakter);  // menetapkan posisi karakter pada alphabet
-        StringBuffer ciphertext = new StringBuffer();   //Membuat objek stringbuffer baru
+
 
         /*
         Merangkai karakter plainteks menjadi cipherteks dengan kondisi jika desimal karakter 32 (SPACE),
@@ -48,10 +49,10 @@ public class caesarCipher {
 
     //method dekripsi
     public String dekripsi(String ciphertext, int key){
-
+        StringBuffer plainteks = new StringBuffer(); // membuat objek StringBuffer baru
         char karakter = ciphertext.charAt(0);//mengambil karakter pada ciphertext mulai dari index awalnya
         int charPosition =   ALPHABET.indexOf(karakter); // menetapkan posisi karakter
-        StringBuffer plainteks = new StringBuffer(); // membuat objek StringBuffer baru
+
 
         /*
         merangkai karakter dengan kondisi jika desimal karakter ADALAH 32
